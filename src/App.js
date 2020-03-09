@@ -1,9 +1,16 @@
 import React from 'react';
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-const todoList = [];
+const todoList = [
+  {
+    name: "Click this item to mark complete",
+    id: 111,
+    completed: false
+  }
+];
 
 class App extends React.Component {
   // you will need a place to store your state in this component.
@@ -57,10 +64,10 @@ class App extends React.Component {
   // this component is going to take care of state, and any change handlers you need to work with your state
   render() {
     return (
-
       <div className="App">
+
         <div>
-          <h1>To Do List</h1>
+          <h1>Sweet To Do List</h1>
           <TodoForm addItem={this.addItem}/>
         </div>
         <div>
