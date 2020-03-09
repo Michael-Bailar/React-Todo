@@ -1,0 +1,10 @@
+.item{
+    background-color: blueviolet;
+    width: 200px;
+}
+
+.item.completed {
+    background-color: violet;
+    text-decoration: line-through;
+    width: 200px;
+}
