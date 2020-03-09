@@ -37,15 +37,9 @@ class App extends React.Component {
     })
   }
 
-  clearCompleted = itemId => {
+  clearCompleted = () => {
     this.setState({
-      todoList: this.state.todoList.filter(item => {
-        if (item.completed === true) {
-          return ''
-        } else {
-          return item;
-        }
-      })
+      todoList: this.state.todoList.filter(item => !item.completed)
     })
   }
 
