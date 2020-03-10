@@ -1,0 +1,17 @@
+
+h1 {
+    text-align: center;
+    background-color: orangered;
+}
+.item{
+    background-color: orangered;
+    width: 100%;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.item.completed {
+    background-color: orange;
+    text-decoration: line-through;
+    width: 100%;
+}
